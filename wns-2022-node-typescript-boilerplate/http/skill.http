@@ -1,0 +1,21 @@
+GET http://localhost:3001/api/skill
+
+###
+
+POST http://localhost:3001/api/skill
+Content-Type: application/json
+
+{
+    "name": "TypeScript"
+}
+
+###
+PUT http://localhost:3001/api/skill?id=2
+Content-Type: application/json
+
+{
+    "name": "CSS"
+}
+
+###
+DELETE http://localhost:3001/api/skill?id=1

@@ -1,0 +1,36 @@
+GET http://localhost:3001/api/wilder
+
+###
+
+POST http://localhost:3001/api/wilder
+Content-Type: application/json
+
+{
+    "name": "Franck",
+    "description": "Nouveau wilder en alternance depuis le 12 septembre 2022.",
+    "grades": [
+        {
+    "wilderName": "Franck",
+    "skillName": "HTML",
+    "grade": "7"
+        },
+        {
+    "wilderName": "Franck",
+    "skillName": "JavaScript",
+    "grade": "7"
+        }
+    ]
+}
+
+###
+
+PUT http://localhost:3001/api/wilder?id=1
+Content-Type: application/json
+
+{
+    "description": "Maxime est un nouveau wilder depuis le 12 septembre 2022."
+}
+
+###
+
+DELETE http://localhost:3001/api/wilder?id=7
